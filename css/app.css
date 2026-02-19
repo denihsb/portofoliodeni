@@ -102,7 +102,7 @@ header.navbar-container .logo img {
   list-style: none;
 }
 
-.nav-list li a {
+.nav-list li a {  
   padding: 0.4rem 0.6rem;
   border-radius: 999px;
   white-space: nowrap;
@@ -713,9 +713,17 @@ aside {
     font-size: 1.2rem;
   }
 
-   .nav-list li a {
-    padding: 0.45rem 0.9rem;
+  .nav-list ul {
+    display: flex;
+    flex-wrap: wrap;   /* INI KUNCINYA 🔥 */
+    justify-content: center;
+    gap: 0.5rem;
+    row-gap: 0.4rem;
+  }
+
+  .nav-list li a {
     font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
   }
 
   header.navbar-container {
