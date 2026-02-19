@@ -75,24 +75,15 @@ header.navbar-wrapper.scrolled {
   align-items: center;
 }
 
-header.navbar-container .logo img {
-  width: 140px;
-}
-
 .nav-list {
-  overflow-x: auto;
-}
-
-.nav-list::-webkit-scrollbar {
-  display: none;
-}
-
+  overflow: visible;
+}   
 
 .nav-list ul {
   display: flex;
   gap: 1rem;
   padding-left: 0;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   white-space: nowrap;
   justify-content: center;
   margin: 0;
