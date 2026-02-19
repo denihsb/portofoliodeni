@@ -355,12 +355,27 @@ aside {
   font-weight: 600;
   color: #2d3e50;
   transition: 0.2s ease;
+  position: relative;
+}
+
+.project-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: 0.25s ease;
 }
 
 .project-links a:hover {
   color: #425c77;
 }
 
+.project-links a:hover::after {
+  width: 100%;
+}
 /* =========================
    CONTACT SECTION
 ========================= */
