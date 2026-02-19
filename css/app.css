@@ -413,3 +413,195 @@ aside {
 .btn-primary:hover {
   background-color: #425c77;
 }
+
+/* ============================= */
+/* ===== CERTIFICATE PAGE ====== */
+/* ============================= */
+
+.certificates {
+  padding: 40px 20px;
+}
+
+.certificates h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.section-desc {
+  color: #636e72;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* CARD ELITE */
+.certificate-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 18px;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft glow hover 😏 */
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.certificate-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.certificate-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* Text */
+.certificate-card p {
+  font-size: 14px;
+  color: #636e72;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Badge 😏🔥 */
+.certificate-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0984e3, #74b9ff);
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Tags */
+.project-tags {
+  margin-bottom: 12px;
+}
+
+.project-tags span {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #f1f2f6;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* Links */
+.project-links a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0984e3;
+  margin-right: 14px;
+  position: relative;
+}
+
+.project-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #0984e3;
+  transition: 0.25s ease;
+}
+
+.project-links a:hover::after {
+  width: 100%;
+}
+
+/* ============================= */
+/* ===== MODAL PREVIEW ========= */
+/* ============================= */
+
+.certificate-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Overlay */
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Content */
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  max-width: 90%;
+  max-height: 85%;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Image */
+.modal-content img {
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Close Button */
+.modal-close {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #636e72;
+  transition: 0.2s;
+}
+
+.modal-close:hover {
+  color: #0984e3;
+}
+
+/* ACTIVE STATE 😏 */
+.certificate-modal.show {
+  display: flex;
+}
+
+.certificate-modal.show .modal-overlay {
+  opacity: 1;
+}
+
+.certificate-modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}

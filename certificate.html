@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Deni</title>
+ 
+    <link rel="stylesheet" href="css/app.css" />
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <!-- MODAL CERTIFICATE PREVIEW -->
+<div class="certificate-modal" id="certificateModal">
+
+  <div class="modal-overlay"></div>
+
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <img id="modalImage" src="" alt="Certificate Preview">
+  </div>
+
+</div>
+
+<script>
+  const modal = document.getElementById("certificateModal");
+  const modalImg = document.getElementById("modalImage");
+  const previewButtons = document.querySelectorAll(".preview-btn");
+  const closeBtn = document.querySelector(".modal-close");
+  const overlay = document.querySelector(".modal-overlay");
+
+  previewButtons.forEach(button => {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const imageSrc = this.getAttribute("href");
+
+      modalImg.src = imageSrc;
+      modal.classList.add("show");
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove("show");
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+</script>
+
+  <body>
+    <header class="navbar-container">
+      <nav class="nav-list">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="certificate.html" class="active">Certificate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="certificates">
+
+        <h2>Certificates & Achievements</h2>
+        <p class="section-desc">
+          Beberapa sertifikat yang saya peroleh selama proses pembelajaran.
+        </p>
+
+        <div class="projects-container">
+
+          <!-- CERTIFICATE 1 -->
+          <div class="certificate-card">
+
+            <span class="certificate-badge">
+              Dicoding Certificate
+            </span>
+
+            <img src="img/webdasar.png" alt="Certificate Preview">
+
+            <h3>Belajar Dasar Pemrograman Web</h3>
+
+            <p>
+              Sertifikat kelulusan kelas Dicoding yang berfokus pada HTML,
+              CSS, dan layout modern menggunakan Flexbox.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Flexbox</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1mfaES-LrSpHyaM1gGZQ5fhZFaLqU7b7v/view?usp=drive_link" target="_blank">
+                View Certificate
+              </a>
+            </div>
+
+          </div>
+
+          <!-- CERTIFICATE 2 -->
+          <div class="certificate-card">
+
+            <span class="certificate-badge">
+              Dicoding Certificate
+            </span>
+
+            <img src="img/certificate-js.png" alt="Certificate Preview">
+
+            <h3>Belajar Dasar JavaScript</h3>
+
+            <p>
+              Sertifikat pembelajaran fundamental JavaScript meliputi
+              dasar logika, DOM manipulation, dan interaktivitas web.
+            </p>
+
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>DOM</span>
+            </div>
+
+            <div class="project-links">
+              <a href="URL_SERTIFIKAT_ASLI" target="_blank">
+                View Certificate
+              </a>
+            </div>
+
+          </div>
+          
+          <div class="certificate-card">
+
+            <span class="certificate-badge">
+              Ibay Komputer Certificate
+            </span>
+
+            <img src="img/ibay.jpeg" alt="Certificate Preview">
+
+            <h3>Program Aplikasi Perkantoran</h3>
+
+            <p>
+              Sertifikat kelulusan kursus dan pelatihan program aplikasi perkantoran yang mencakup
+              penggunaan Word, Excel, dan PowerPoint untuk kebutuhan profesional.
+            </p>
+
+            <div class="project-tags">
+              <span>Word</span>
+              <span>Excel</span>
+              <span>PowerPoint</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1mfaES-LrSpHyaM1gGZQ5fhZFaLqU7b7v/view?usp=drive_link" target="_blank">
+                View Certificate
+              </a>
+            </div>
+
+          </div>
+
+          <div class="certificate-card">
+
+            <span class="certificate-badge">
+              Ibay Komputer Certificate
+            </span>
+
+            <img src="img/ibay.jpeg" alt="Certificate Preview">
+
+            <h3>Best Ms Word</h3>
+
+            <p>
+              Sertifikat pemenang lomba Microsoft Word Terbaik.
+            </p>
+
+            <div class="project-tags">
+              <span>Word</span>
+              <span>Best</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1YjQuVKYsN7sG2i11h0SEg3BwDkLAnqAS/view?usp=drive_link" target="_blank">
+                View Certificate
+              </a>
+            </div>
+
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
