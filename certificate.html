@@ -15,56 +15,22 @@
     >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
-  <!-- MODAL CERTIFICATE PREVIEW -->
-<div class="certificate-modal" id="certificateModal">
-
-  <div class="modal-overlay"></div>
-
-  <div class="modal-content">
-    <span class="modal-close">&times;</span>
-    <img id="modalImage" src="" alt="Certificate Preview">
-  </div>
-
-</div>
-
-<script>
-  const modal = document.getElementById("certificateModal");
-  const modalImg = document.getElementById("modalImage");
-  const previewButtons = document.querySelectorAll(".preview-btn");
-  const closeBtn = document.querySelector(".modal-close");
-  const overlay = document.querySelector(".modal-overlay");
-
-  previewButtons.forEach(button => {
-    button.addEventListener("click", function(e) {
-      e.preventDefault();
-
-      const imageSrc = this.getAttribute("href");
-
-      modalImg.src = imageSrc;
-      modal.classList.add("show");
-    });
-  });
-
-  function closeModal() {
-    modal.classList.remove("show");
-  }
-
-  closeBtn.addEventListener("click", closeModal);
-  overlay.addEventListener("click", closeModal);
-</script>
 
   <body>
-    <header class="navbar-container">
-      <nav class="nav-list">
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="certificate.html" class="active">Certificate</a></li>
-        </ul>
-      </nav>
+    <header class="navbar-wrapper">
+      <div class="navbar-container">
+        <nav class="nav-list">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="certificate.html" class="active">Certificate</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
 
     <main>
       <section class="certificates">
@@ -74,7 +40,7 @@
           Beberapa sertifikat yang saya peroleh selama proses pembelajaran.
         </p>
 
-        <div class="projects-container">
+        <div class="certificate-container">
 
           <!-- CERTIFICATE 1 -->
           <div class="certificate-card">
@@ -92,13 +58,16 @@
               CSS, dan layout modern menggunakan Flexbox.
             </p>
 
-            <div class="project-tags">
+            <div class="certificate-tags">
               <span>HTML</span>
               <span>CSS</span>
               <span>Flexbox</span>
             </div>
 
-            <div class="project-links">
+            <div class="certificate-links">
+              <a href="img/webdasar.png" class="preview-btn">
+                Preview
+              </a>
               <a href="https://drive.google.com/file/d/1mfaES-LrSpHyaM1gGZQ5fhZFaLqU7b7v/view?usp=drive_link" target="_blank">
                 View Certificate
               </a>
@@ -122,13 +91,16 @@
               dasar logika, DOM manipulation, dan interaktivitas web.
             </p>
 
-            <div class="project-tags">
+            <div class="certificate-tags">
               <span>JavaScript</span>
               <span>DOM</span>
             </div>
 
-            <div class="project-links">
-              <a href="URL_SERTIFIKAT_ASLI" target="_blank">
+            <div class="certificate-links">
+              <a href="img/certificate-js.png" class="preview-btn">
+                Preview
+              </a>
+              <a href="https://drive.google.com/file/d/1mfaES-LrSpHyaM1gGZQ5fhZFaLqU7b7v/view?usp=drive_link" target="_blank">
                 View Certificate
               </a>
             </div>
@@ -150,13 +122,16 @@
               penggunaan Word, Excel, dan PowerPoint untuk kebutuhan profesional.
             </p>
 
-            <div class="project-tags">
+            <div class="certificate-tags">
               <span>Word</span>
               <span>Excel</span>
               <span>PowerPoint</span>
             </div>
 
-            <div class="project-links">
+            <div class="certificate-links">
+              <a href="img/ibay.jpeg" class="preview-btn">
+                Preview
+              </a>
               <a href="https://drive.google.com/file/d/1mfaES-LrSpHyaM1gGZQ5fhZFaLqU7b7v/view?usp=drive_link" target="_blank">
                 View Certificate
               </a>
@@ -170,7 +145,7 @@
               Ibay Komputer Certificate
             </span>
 
-            <img src="img/ibay.jpeg" alt="Certificate Preview">
+            <img src="img/word.jpeg" alt="Certificate Preview">
 
             <h3>Best Ms Word</h3>
 
@@ -178,12 +153,15 @@
               Sertifikat pemenang lomba Microsoft Word Terbaik.
             </p>
 
-            <div class="project-tags">
+            <div class="certificate-tags">
               <span>Word</span>
               <span>Best</span>
             </div>
 
-            <div class="project-links">
+            <div class="certificate-links">
+              <a href="img/word.jpeg" class="preview-btn">
+                Preview
+              </a>
               <a href="https://drive.google.com/file/d/1YjQuVKYsN7sG2i11h0SEg3BwDkLAnqAS/view?usp=drive_link" target="_blank">
                 View Certificate
               </a>
@@ -193,5 +171,42 @@
 
       </section>
     </main>
+    <!-- MODAL CERTIFICATE PREVIEW -->
+    <div class="certificate-modal" id="certificateModal">
+
+      <div class="modal-overlay"></div>
+
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img id="modalImage" src="" alt="Certificate Preview">
+      </div>
+
+    </div>
+
+    <script>
+      const modal = document.getElementById("certificateModal");
+      const modalImg = document.getElementById("modalImage");
+      const previewButtons = document.querySelectorAll(".preview-btn");
+      const closeBtn = document.querySelector(".modal-close");
+      const overlay = document.querySelector(".modal-overlay");
+
+      previewButtons.forEach(button => {
+        button.addEventListener("click", function(e) {
+          e.preventDefault();
+
+          const imageSrc = this.getAttribute("href");
+
+          modalImg.src = imageSrc;
+          modal.classList.add("show");
+        });
+      });
+
+      function closeModal() {
+        modal.classList.remove("show");
+      }
+
+      closeBtn.addEventListener("click", closeModal);
+      overlay.addEventListener("click", closeModal);
+    </script>
   </body>
 </html>

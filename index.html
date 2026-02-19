@@ -16,28 +16,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body>
-    <header class="navbar-container">
-      <nav class="nav-list">
-        <ul>
-          <li><a href="index.html" class="active">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="certificate.html">Certificate</a></li>
-        </ul>
-      </nav>
+    <header class="navbar-wrapper">
+      <div class="navbar-container">
+        <nav class="nav-list">
+          <ul>
+            <li><a href="index.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
 
     <main>
       <div class="content">
         <div class="content-description">
           <h1 class="title"> Hi, i'm Deni <br>
-            Full Stack Developer & Illustrator
+            <span>Full Stack Developer & Illustrator</span>
           </h1>
           <p>
-            Saya seorang mahasiswa yang berfokus pada pengembangan web dan ilustrasi digital.
-Saya bercita-cita menjadi Full Stack Developer yang membangun produk modern, responsif, dan berorientasi pada pengalaman pengguna serta menjadi ilustrator digital yang kreatif.
-
+            Saya berfokus pada pengembangan web modern, membangun tampilan yang clean,
+            responsif, dan berorientasi pada pengalaman pengguna.  
+            Saya juga memiliki ketertarikan kuat pada visual design & illustration.
           </p>
 
           <a href="projects.html" class="btn-primary">
@@ -60,5 +63,12 @@ Saya bercita-cita menjadi Full Stack Developer yang membangun produk modern, res
         </div>
       </aside>
     </main>
+    <script>
+      window.addEventListener("scroll", () => {
+        document.querySelector(".navbar-wrapper")
+          .classList.toggle("scrolled", window.scrollY > 10);
+      });
+    </script>
+
   </body>
 </html>
