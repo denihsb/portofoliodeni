@@ -240,7 +240,7 @@ aside {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 
   max-width: 1000px;
@@ -286,7 +286,7 @@ aside {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 
   max-width: 1000px;
@@ -399,7 +399,7 @@ aside {
 
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.2rem;
 
   max-width: 900px;
@@ -497,7 +497,7 @@ aside {
 /* GRID */
 .certificate-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
 }
 
@@ -679,4 +679,31 @@ aside {
 .certificate-card,
 .btn-primary {
   transition: all 0.25s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    padding: 1.1rem;
+  }
+
+  .skills,
+  .projects,
+  .contact,
+  .certificates {
+    padding: 2.5rem 1rem;
+  }
+
+   h2 {
+    font-size: 2.1rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+}
+
+section {
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 2rem);
 }
