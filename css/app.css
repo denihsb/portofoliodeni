@@ -76,7 +76,7 @@ header.navbar-wrapper.scrolled {
 }
 
 .nav-list {
-  overflow: visible;
+  overflow-x: visible;
 }   
 
 .nav-list ul {
