@@ -13,6 +13,8 @@
   <body>
     <header class="navbar-wrapper">
       <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">DENI.</a>
+        <button class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
         <nav class="nav-list">
           <ul>
             <li><a href="index.html">About</a></li>
@@ -24,46 +26,27 @@
         </nav>
       </div>
     </header>
-
     <main>
       <section class="contact">
         <h2>Contact</h2>
-        <p class="contact-desc">
-          Tertarik untuk bekerja sama, berkolaborasi, atau sekadar berdiskusi?
-          Jangan ragu untuk menghubungi saya.
-        </p>
-
+        <p class="contact-desc">Tertarik untuk bekerja sama, berkolaborasi, atau sekadar berdiskusi? Jangan ragu untuk menghubungi saya.</p>
         <div class="contact-container">
-
-          <a href="mailto:denianugra8@gmail.com" class="contact-card">
-            <h3>Email</h3>
-            <p>denianugra8@gmail.com</p>
-          </a>
-
-          <a href="https://www.linkedin.com/in/denii-anugrah-hsb-a0b232345" class="contact-card" target="_blank">
-            <h3>LinkedIn</h3>
-            <p>linkedin.com/in/denii-anugrah-hsb</p>
-          </a>
-
-          <a href="https://github.com/denihsb" class="contact-card" target="_blank">
-            <h3>GitHub</h3>
-            <p>github.com/denihsb</p>
-          </a>
-
-          <a href="https://www.instagram.com/jst_artt26?igsh=MWNlZm44ODRwYnEyaw==" class="contact-card" target="_blank">
-            <h3>Instagram</h3>
-            <p>instagram.com/jst_artt26</p>
-          </a>
-
+          <a href="mailto:denianugra8@gmail.com" class="contact-card"><h3>Email</h3><p>denianugra8@gmail.com</p></a>
+          <a href="https://www.linkedin.com/in/denii-anugrah-hsb-a0b232345" class="contact-card" target="_blank"><h3>LinkedIn</h3><p>linkedin.com/in/denii-anugrah-hsb</p></a>
+          <a href="https://github.com/denihsb" class="contact-card" target="_blank"><h3>GitHub</h3><p>github.com/denihsb</p></a>
+          <a href="https://www.instagram.com/jst_artt26?igsh=MWNlZm44ODRwYnEyaw==" class="contact-card" target="_blank"><h3>Instagram</h3><p>instagram.com/jst_artt26</p></a>
         </div>
       </section>
     </main>
-
-    <script>
-      window.addEventListener("scroll", () => {
-        document.querySelector(".navbar-wrapper")
-          .classList.toggle("scrolled", window.scrollY > 10);
-      });
-    </script>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-logo">DENI.</div>
+        <nav class="footer-links">
+          <a href="index.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a href="certificate.html">Certificate</a>
+        </nav>
+        <p class="footer-copy">© 2025 <span>Deni Anugrah</span> — Full Stack Developer &amp; Illustrator</p>
+      </div>
+    </footer>
+    <script src="js/portfolio.js"></script>
   </body>
 </html>

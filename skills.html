@@ -13,6 +13,8 @@
   <body>
     <header class="navbar-wrapper">
       <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">DENI.</a>
+        <button class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
         <nav class="nav-list">
           <ul>
             <li><a href="index.html">About</a></li>
@@ -24,76 +26,24 @@
         </nav>
       </div>
     </header>
-
     <main>
       <section class="skills">
         <h2>Skills</h2>
-
         <div class="skills-container">
-
-          <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Membangun struktur website yang rapi dan semantic.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>CSS</h3>
-            <p>Membuat tampilan modern, responsive, dan clean UI.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>C++</h3>
-            <p>Menguasai bahasa pemrograman C++ untuk pengembangan aplikasi berbasis komputer.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Mengembangkan interaktivitas dan logic aplikasi web.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>React</h3>
-            <p>Membangun UI berbasis komponen yang dinamis.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Digital Illustration</h3>
-            <p>Membuat ilustrasi digital dengan gaya visual modern.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Traditional Illustration</h3>
-            <p>Membuat ilustrasi tradisional dengan teknik dan media yang beragam.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Character Design</h3>
-            <p>Merancang desain karakter dengan eksplorasi bentuk &amp; warna.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Scenery Design</h3>
-            <p>Membuat desain latar belakang dan pemandangan dengan detail visual yang menarik.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Visual Composition</h3>
-            <p>Mengatur elemen visual agar harmonis dan menarik.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>UI / Visual Design</h3>
-            <p>Menggabungkan estetika visual dengan pengalaman pengguna.</p>
-          </div>
-
-          <div class="skill-card">
-            <h3>Word, Excel, PowerPoint</h3>
-            <p>Menguasai penggunaan software kantor untuk membuat dokumen, presentasi, dan spreadsheet yang profesional.</p>
-          </div>
-
+          <div class="skill-card"><h3>HTML</h3><p>Membangun struktur website yang rapi dan semantic.</p></div>
+          <div class="skill-card"><h3>CSS</h3><p>Membuat tampilan modern, responsive, dan clean UI.</p></div>
+          <div class="skill-card"><h3>C++</h3><p>Menguasai bahasa pemrograman C++ untuk pengembangan aplikasi berbasis komputer.</p></div>
+          <div class="skill-card"><h3>JavaScript</h3><p>Mengembangkan interaktivitas dan logic aplikasi web.</p></div>
+          <div class="skill-card"><h3>React</h3><p>Membangun UI berbasis komponen yang dinamis.</p></div>
+          <div class="skill-card"><h3>Digital Illustration</h3><p>Membuat ilustrasi digital dengan gaya visual modern.</p></div>
+          <div class="skill-card"><h3>Traditional Illustration</h3><p>Membuat ilustrasi tradisional dengan teknik dan media yang beragam.</p></div>
+          <div class="skill-card"><h3>Character Design</h3><p>Merancang desain karakter dengan eksplorasi bentuk &amp; warna.</p></div>
+          <div class="skill-card"><h3>Scenery Design</h3><p>Membuat desain latar belakang dan pemandangan dengan detail visual yang menarik.</p></div>
+          <div class="skill-card"><h3>Visual Composition</h3><p>Mengatur elemen visual agar harmonis dan menarik.</p></div>
+          <div class="skill-card"><h3>UI / Visual Design</h3><p>Menggabungkan estetika visual dengan pengalaman pengguna.</p></div>
+          <div class="skill-card"><h3>Word, Excel, PowerPoint</h3><p>Menguasai penggunaan software kantor untuk membuat dokumen, presentasi, dan spreadsheet yang profesional.</p></div>
         </div>
       </section>
-
       <aside>
         <div class="social-media">
           <ul>
@@ -104,12 +54,15 @@
         </div>
       </aside>
     </main>
-
-    <script>
-      window.addEventListener("scroll", () => {
-        document.querySelector(".navbar-wrapper")
-          .classList.toggle("scrolled", window.scrollY > 10);
-      });
-    </script>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-logo">DENI.</div>
+        <nav class="footer-links">
+          <a href="index.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a href="certificate.html">Certificate</a>
+        </nav>
+        <p class="footer-copy">© 2025 <span>Deni Anugrah</span> — Full Stack Developer &amp; Illustrator</p>
+      </div>
+    </footer>
+    <script src="js/portfolio.js"></script>
   </body>
 </html>

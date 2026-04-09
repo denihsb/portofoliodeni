@@ -14,6 +14,10 @@
   <body>
     <header class="navbar-wrapper">
       <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">DENI.</a>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
         <nav class="nav-list">
           <ul>
             <li><a href="index.html" class="active">About</a></li>
@@ -25,26 +29,17 @@
         </nav>
       </div>
     </header>
-
     <main>
       <div class="content">
         <div class="content-description">
-          <h1 class="title">
-            Hi, i'm Deni
-            <span>Full Stack Developer &amp; Illustrator</span>
-          </h1>
-          <p>
-            Saya berfokus pada pengembangan web modern, membangun tampilan yang clean,
-            responsif, dan berorientasi pada pengalaman pengguna.
-            Saya juga memiliki ketertarikan kuat pada visual design &amp; illustration.
-          </p>
+          <h1 class="title">Hi, i'm Deni<span>Full Stack Developer &amp; Illustrator</span></h1>
+          <p>Saya berfokus pada pengembangan web modern, membangun tampilan yang clean, responsif, dan berorientasi pada pengalaman pengguna. Saya juga memiliki ketertarikan kuat pada visual design &amp; illustration.</p>
           <a href="projects.html" class="btn-primary">View My Work</a>
         </div>
         <div class="content-image">
           <img src="img/Tak berjudul24 (1).png" alt="Foto Profil Deni" />
         </div>
       </div>
-
       <aside>
         <div class="social-media">
           <ul>
@@ -55,12 +50,19 @@
         </div>
       </aside>
     </main>
-
-    <script>
-      window.addEventListener("scroll", () => {
-        document.querySelector(".navbar-wrapper")
-          .classList.toggle("scrolled", window.scrollY > 10);
-      });
-    </script>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-logo">DENI.</div>
+        <nav class="footer-links">
+          <a href="index.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="certificate.html">Certificate</a>
+        </nav>
+        <p class="footer-copy">© 2025 <span>Deni Anugrah</span> — Full Stack Developer &amp; Illustrator</p>
+      </div>
+    </footer>
+    <script src="js/portfolio.js"></script>
   </body>
 </html>
