@@ -13,8 +13,6 @@
   <body>
     <header class="navbar-wrapper">
       <div class="navbar-container">
-        <a href="index.html" class="navbar-logo">DENI.</a>
-        <button class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
         <nav class="nav-list">
           <ul>
             <li><a href="index.html">About</a></li>
@@ -26,10 +24,14 @@
         </nav>
       </div>
     </header>
+
     <main>
       <section class="certificates">
         <h2>Certificates &amp; Achievements</h2>
-        <p class="section-desc">Beberapa sertifikat yang saya peroleh selama proses pembelajaran.</p>
+        <p class="section-desc">
+          Beberapa sertifikat yang saya peroleh selama proses pembelajaran.
+        </p>
+
         <div class="certificate-container">
 
           <div class="certificate-card">
@@ -37,7 +39,9 @@
             <img src="img/webdasar.png" alt="Certificate Preview">
             <h3>Belajar Dasar Pemrograman Javascript</h3>
             <p>Sertifikat kelulusan kelas Dicoding yang berfokus pada JavaScript, termasuk dasar logika, DOM manipulation, dan interaktivitas web.</p>
-            <div class="certificate-tags"><span>JavaScript</span><span>DOM</span><span>Programming</span></div>
+            <div class="certificate-tags">
+              <span>JavaScript</span><span>DOM</span><span>Programming</span>
+            </div>
             <div class="certificate-links">
               <a href="img/js.png" class="preview-btn">Preview</a>
               <a href="https://drive.google.com/file/d/1rXgmAKYV36vcURq58FsbIqPUbqJg4iiN/view?usp=drive_link" target="_blank">View Certificate</a>
@@ -49,7 +53,9 @@
             <img src="img/webdasar.png" alt="Certificate Preview">
             <h3>Belajar Dasar Pemrograman Web</h3>
             <p>Sertifikat kelulusan kelas Dicoding yang berfokus pada HTML, CSS, dan layout modern menggunakan Flexbox.</p>
-            <div class="certificate-tags"><span>HTML</span><span>CSS</span><span>Flexbox</span></div>
+            <div class="certificate-tags">
+              <span>HTML</span><span>CSS</span><span>Flexbox</span>
+            </div>
             <div class="certificate-links">
               <a href="img/webdasar.png" class="preview-btn">Preview</a>
               <a href="https://drive.google.com/file/d/1mfaES-LrSpHyaM1gGZQ5fhZFaLqU7b7v/view?usp=drive_link" target="_blank">View Certificate</a>
@@ -61,24 +67,26 @@
             <img src="img/finansial.png" alt="Certificate Preview">
             <h3>Financial Literacy</h3>
             <p>Sertifikat kelulusan kelas Dicoding yang berfokus pada literasi finansial, termasuk pengelolaan keuangan pribadi, investasi, dan perencanaan keuangan.</p>
-            <div class="certificate-tags"><span>Financial</span><span>Economy</span></div>
+            <div class="certificate-tags">
+              <span>Financial</span><span>Economy</span>
+            </div>
             <div class="certificate-links">
               <a href="img/finansial.png" class="preview-btn">Preview</a>
               <a href="https://drive.google.com/file/d/183cZ3pw1QHIpmHFEaImYPlVBOEbIl8Od/view?usp=drive_link" target="_blank">View Certificate</a>
             </div>
           </div>
 
-          <!-- ✅ FIXED: Ibay Komputer sekarang punya link Drive sendiri (ganti dengan link aslinya nanti) -->
           <div class="certificate-card">
             <span class="certificate-badge">Ibay Komputer Certificate</span>
             <img src="img/ibay.jpeg" alt="Certificate Preview">
             <h3>Program Aplikasi Perkantoran</h3>
             <p>Sertifikat kelulusan kursus dan pelatihan program aplikasi perkantoran yang mencakup penggunaan Word, Excel, dan PowerPoint untuk kebutuhan profesional.</p>
-            <div class="certificate-tags"><span>Word</span><span>Excel</span><span>PowerPoint</span></div>
+            <div class="certificate-tags">
+              <span>Word</span><span>Excel</span><span>PowerPoint</span>
+            </div>
             <div class="certificate-links">
               <a href="img/ibay.jpeg" class="preview-btn">Preview</a>
-              <!-- TODO: Ganti link di bawah ini dengan link Google Drive sertifikat Ibay Komputer yang benar -->
-              <a href="#" target="_blank">View Certificate</a>
+              <a href="https://drive.google.com/file/d/1mfaES-LrSpHyaM1gGZQ5fhZFaLqU7b7v/view?usp=drive_link" target="_blank">View Certificate</a>
             </div>
           </div>
 
@@ -87,7 +95,9 @@
             <img src="img/word.jpeg" alt="Certificate Preview">
             <h3>Best Ms Word</h3>
             <p>Sertifikat pemenang lomba Microsoft Word Terbaik.</p>
-            <div class="certificate-tags"><span>Word</span><span>Best</span></div>
+            <div class="certificate-tags">
+              <span>Word</span><span>Best</span>
+            </div>
             <div class="certificate-links">
               <a href="img/word.jpeg" class="preview-btn">Preview</a>
               <a href="https://drive.google.com/file/d/1YjQuVKYsN7sG2i11h0SEg3BwDkLAnqAS/view?usp=drive_link" target="_blank">View Certificate</a>
@@ -98,7 +108,7 @@
       </section>
     </main>
 
-    <!-- MODAL -->
+    <!-- MODAL CERTIFICATE PREVIEW -->
     <div class="certificate-modal" id="certificateModal">
       <div class="modal-overlay"></div>
       <div class="modal-content">
@@ -107,18 +117,12 @@
       </div>
     </div>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-logo">DENI.</div>
-        <nav class="footer-links">
-          <a href="index.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a href="certificate.html">Certificate</a>
-        </nav>
-        <p class="footer-copy">© 2025 <span>Deni Anugrah</span> — Full Stack Developer &amp; Illustrator</p>
-      </div>
-    </footer>
-
-    <script src="js/portfolio.js"></script>
     <script>
+      window.addEventListener("scroll", () => {
+        document.querySelector(".navbar-wrapper")
+          .classList.toggle("scrolled", window.scrollY > 10);
+      });
+
       const modal       = document.getElementById("certificateModal");
       const modalImg    = document.getElementById("modalImage");
       const previewBtns = document.querySelectorAll(".preview-btn");

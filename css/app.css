@@ -98,7 +98,7 @@ header.navbar-wrapper {
   position: sticky;
   top: 0;
   z-index: 9999;
-  background: rgba(11,11,16,0.88);
+  background: rgba(11,11,16,0.80);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
@@ -116,61 +116,8 @@ header.navbar-wrapper.scrolled {
   margin-inline: auto;
   padding: 0.9rem 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.navbar-logo {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
-  font-size: 1.1rem;
-  color: var(--accent);
-  letter-spacing: 0.05em;
-  text-decoration: none;
-}
-
-/* Hamburger button */
-.hamburger {
-  display: none;
-  flex-direction: column;
   justify-content: center;
-  gap: 5px;
-  width: 36px;
-  height: 36px;
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  padding: 7px;
-  transition: border-color var(--transition);
-  z-index: 10001;
-}
-
-.hamburger:hover {
-  border-color: var(--border-acc);
-}
-
-.hamburger span {
-  display: block;
-  width: 100%;
-  height: 1.5px;
-  background: var(--text);
-  border-radius: 2px;
-  transition: all 0.3s var(--ease);
-  transform-origin: center;
-}
-
-/* Hamburger → X animation */
-.hamburger.open span:nth-child(1) {
-  transform: translateY(6.5px) rotate(45deg);
-}
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0);
-}
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-6.5px) rotate(-45deg);
+  align-items: center;
 }
 
 .nav-list ul {
@@ -192,7 +139,6 @@ header.navbar-wrapper.scrolled {
   border-radius: 999px;
   border: 1px solid transparent;
   transition: all var(--transition);
-  white-space: nowrap;
 }
 
 .nav-list li a:hover {
@@ -912,129 +858,47 @@ aside {
   opacity: 1;
 }
 
-/* ── SCROLL-TRIGGERED ANIMATIONS (IntersectionObserver) ── */
-/* Cards start hidden; JS adds .visible when they enter viewport */
+/* ── STAGGER ANIMATIONS ── */
 .skill-card,
 .project-card,
 .contact-card,
 .certificate-card {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+  animation: fadeUp 0.5s var(--ease) both;
 }
 
-.skill-card.visible,
-.project-card.visible,
-.contact-card.visible,
-.certificate-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.skill-card:nth-child(1)  { animation-delay: 0.05s; }
+.skill-card:nth-child(2)  { animation-delay: 0.10s; }
+.skill-card:nth-child(3)  { animation-delay: 0.15s; }
+.skill-card:nth-child(4)  { animation-delay: 0.20s; }
+.skill-card:nth-child(5)  { animation-delay: 0.25s; }
+.skill-card:nth-child(6)  { animation-delay: 0.30s; }
+.skill-card:nth-child(7)  { animation-delay: 0.35s; }
+.skill-card:nth-child(8)  { animation-delay: 0.40s; }
+.skill-card:nth-child(9)  { animation-delay: 0.45s; }
+.skill-card:nth-child(10) { animation-delay: 0.50s; }
+.skill-card:nth-child(11) { animation-delay: 0.55s; }
+.skill-card:nth-child(12) { animation-delay: 0.60s; }
 
-/* Stagger via --i custom property set by JS */
-.skill-card,
-.project-card,
-.contact-card,
-.certificate-card {
-  transition-delay: calc(var(--i, 0) * 0.07s);
-}
+.project-card:nth-child(1) { animation-delay: 0.05s; }
+.project-card:nth-child(2) { animation-delay: 0.10s; }
+.project-card:nth-child(3) { animation-delay: 0.15s; }
+.project-card:nth-child(4) { animation-delay: 0.20s; }
+.project-card:nth-child(5) { animation-delay: 0.25s; }
+.project-card:nth-child(6) { animation-delay: 0.30s; }
 
-/* ── FOOTER ── */
-footer.site-footer {
-  position: relative;
-  z-index: 1;
-  border-top: 1px solid var(--border);
-  padding: 2.5rem 2rem;
-  text-align: center;
-  background: var(--surface);
-}
+.contact-card:nth-child(1) { animation-delay: 0.05s; }
+.contact-card:nth-child(2) { animation-delay: 0.10s; }
+.contact-card:nth-child(3) { animation-delay: 0.15s; }
+.contact-card:nth-child(4) { animation-delay: 0.20s; }
 
-.footer-inner {
-  max-width: 1200px;
-  margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
-}
-
-.footer-logo {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--accent);
-  letter-spacing: 0.06em;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1.8rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footer-links a {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  transition: color var(--transition);
-}
-
-.footer-links a:hover {
-  color: var(--accent);
-}
-
-.footer-copy {
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-.footer-copy span {
-  color: var(--accent);
-}
+.certificate-card:nth-child(1) { animation-delay: 0.05s; }
+.certificate-card:nth-child(2) { animation-delay: 0.10s; }
+.certificate-card:nth-child(3) { animation-delay: 0.15s; }
+.certificate-card:nth-child(4) { animation-delay: 0.20s; }
+.certificate-card:nth-child(5) { animation-delay: 0.25s; }
 
 /* ── RESPONSIVE ── */
 @media screen and (max-width: 768px) {
-  /* Hamburger visible */
-  .hamburger {
-    display: flex;
-  }
-
-  /* Nav collapses into dropdown */
-  .nav-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: rgba(11,11,16,0.97);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border-acc);
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s var(--ease), padding 0.3s var(--ease);
-  }
-
-  .nav-list.open {
-    max-height: 400px;
-    padding: 1rem 0 1.2rem;
-  }
-
-  .nav-list ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
-  }
-
-  .nav-list li a {
-    font-size: 0.92rem;
-    padding: 0.55rem 1.4rem;
-    display: block;
-  }
-
   main {
     padding: 1.2rem 1.2rem 3rem;
     padding-top: 3rem;
@@ -1061,12 +925,21 @@ footer.site-footer {
   }
 
   .content-image img {
-    width: 220px;
-    height: 220px;
+    width: 240px;
+    height: 240px;
   }
 
   aside {
     display: none;
+  }
+
+  .nav-list ul {
+    gap: 0.25rem;
+  }
+
+  .nav-list li a {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.7rem;
   }
 
   .projects h2,
@@ -1086,18 +959,10 @@ footer.site-footer {
   .certificate-container {
     grid-template-columns: 1fr;
   }
-
-  footer.site-footer {
-    padding: 2rem 1.2rem;
-  }
-
-  .footer-links {
-    gap: 1rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .navbar-container {
-    padding: 0.75rem 1rem;
+    padding: 0.7rem 1rem;
   }
 }
