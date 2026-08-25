@@ -1126,6 +1126,19 @@ body[data-theme="dark"] .site-footer {
 }
 
 @media (max-width: 760px) {
+  .project-visual {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-visual img {
+    object-fit: contain;
+  }
+
+  .project-feature:hover .project-visual img {
+    transform: none;
+  }
+
   .site-header-inner {
     width: min(calc(100% - 1rem), var(--content-width));
   }
