@@ -1,68 +1,289 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portofolio Deni — Full Stack Developer & Illustrator dari Medan, Indonesia." />
-    <title>Portofolio | Deni</title>
+    <meta name="description" content="Deni Anugrah Hasibuan is a creative developer blending web design, UI/UX thinking, and visual craft." />
+    <meta name="theme-color" content="#f3f1eb" />
+    <title>Deni Anugrah Hasibuan | Creative Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
-  <body>
-    <header class="navbar-wrapper">
-      <div class="navbar-container">
-        <a href="index.html" class="navbar-logo">DENI.</a>
-        <button class="hamburger" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-list">
-          <ul>
-            <li><a href="index.html" class="active">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="certificate.html">Certificate</a></li>
-          </ul>
-        </nav>
+  <body data-page="about" data-theme="light">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="index.html" class="logo">Deni.</a>
+
+        <div class="nav-wrap">
+          <nav class="nav-list" aria-label="Main navigation">
+            <ul>
+              <li><a class="nav-link" data-page="about" href="index.html">About</a></li>
+              <li><a class="nav-link" data-page="skills" href="skills.html">Skills</a></li>
+              <li><a class="nav-link" data-page="projects" href="projects.html">Projects</a></li>
+              <li><a class="nav-link" data-page="contact" href="contact.html">Contact</a></li>
+              <li><a class="nav-link" data-page="certificates" href="certificate.html">Certificates</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-wrap-right" style="display: flex; align-items: center; gap: 0.75rem;">
+          <button class="theme-toggle" type="button" aria-label="Switch theme">
+            <span class="icon" aria-hidden="true">☀</span>
+          </button>
+          <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
-    <main>
-      <div class="content">
-        <div class="content-description">
-          <h1 class="title">Hi, i'm Deni<span>Full Stack Developer &amp; Illustrator</span></h1>
-          <p>Saya berfokus pada pengembangan web modern, membangun tampilan yang clean, responsif, dan berorientasi pada pengalaman pengguna. Saya juga memiliki ketertarikan kuat pada visual design &amp; illustration.</p>
-          <a href="projects.html" class="btn-primary">View My Work</a>
-        </div>
-        <div class="content-image">
-          <img src="img/Tak berjudul24 (1).png" alt="Foto Profil Deni" />
-        </div>
-      </div>
-      <aside>
-        <div class="social-media">
-          <ul>
-            <li><a href="https://www.instagram.com/denii.hsb?igsh=MW4xYXg3YzVlZGR0Yg==" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://wa.me/628971872152" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/denii-anugrah-hsb-a0b232345" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+
+    <main class="page-shell">
+      <section class="hero section reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello — I’m Deni</p>
+          <h1>Creative<br />Developer.</h1>
+          <p class="lead">I design and build digital experiences where technology meets visual thinking, blending front-end craftsmanship with a strong eye for interface and illustration.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">View my work</a>
+            <a class="btn btn-secondary" href="contact.html">Let’s talk</a>
+          </div>
+          <ul class="hero-meta" aria-label="Key specialties">
+            <li>UI/UX</li>
+            <li>Frontend</li>
+            <li>Illustration</li>
           </ul>
         </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-wrap">
+            <div class="portrait-frame">
+              <img class="portrait-photo portrait-photo--light" src="img/fotoaku.png" alt="Portrait of Deni Anugrah Hasibuan in light mode" />
+              <img class="portrait-photo portrait-photo--dark" src="img/fotoakudarkmode.png" alt="Portrait of Deni Anugrah Hasibuan in dark mode" />
+            </div>
+            <div class="portrait-note">Available for projects</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="social-rail" aria-label="Social media">
+        <ul>
+          <li><a href="https://www.instagram.com/denii.hsb?igsh=MW4xYXg3YzVlZGR0Yg==" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://wa.me/628971872152" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/denii-anugrah-hsb-a0b232345" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
       </aside>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <p class="section-kicker">01 — About</p>
+          <h2>Developer who likes to think visually.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>I’m Deni, a creative developer from Medan with a focus on web development, interface design, and visual storytelling. I enjoy building digital experiences that are not only functional, but also thoughtful, warm, and memorable.</p>
+            <p>My workflow sits between code and design: I value structure, clarity, responsiveness, and visual rhythm. Whether I’m crafting a landing page, an artistic portfolio, or a product interface, I aim to make the experience feel human and intentional.</p>
+          </div>
+
+          <div class="highlight-panel">
+            <div class="stats-grid">
+              <article class="stat">
+                <span class="stat-value">3+</span>
+                <span class="stat-label">Years of learning & building</span>
+              </article>
+              <article class="stat">
+                <span class="stat-value">12+</span>
+                <span class="stat-label">Creative web experiments</span>
+              </article>
+              <article class="stat">
+                <span class="stat-value">4</span>
+                <span class="stat-label">Core strengths</span>
+              </article>
+              <article class="stat">
+                <span class="stat-value">∞</span>
+                <span class="stat-label">Curiosity</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <p class="section-kicker">02 — Selected work</p>
+          <h2>Things I’ve designed and built.</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="project-feature">
+            <div class="project-visual">
+              <img src="img/artlocal.png" alt="Artlocal project showcase" />
+            </div>
+            <div class="project-content">
+              <div class="project-number">Project 01</div>
+              <h3>Artlocal</h3>
+              <div class="project-meta">
+                <span class="meta-tag">UI/UX</span>
+                <span class="meta-tag">Frontend</span>
+                <span class="meta-tag">Creative</span>
+              </div>
+              <p class="project-copy">A project focused on local art discovery and visual storytelling, presenting cultural work with a clean, modern editorial aesthetic.</p>
+              <div class="project-links-row">
+                <a class="inline-link" href="https://denihsb.github.io/proyekpemweb/" target="_blank" rel="noreferrer">Live demo</a>
+                <a class="inline-link" href="https://github.com/denihsb/proyekpemweb" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="project-list">
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/web.png" alt="Bandung profile website showcase" />
+              </div>
+              <div class="project-card-body">
+                <h4>Bandung City Profile</h4>
+                <p>A city profile website designed to feel informative, polished, and welcoming while staying easy to scan on any device.</p>
+                <div class="project-card-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/porto.png" alt="Portfolio project preview" />
+              </div>
+              <div class="project-card-body">
+                <h4>Portfolio</h4>
+                <p>A personal portfolio structured around visual identity, clarity, and digital storytelling.</p>
+                <div class="project-card-tags">
+                  <span>Portfolio</span>
+                  <span>UX</span>
+                  <span>Design</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/landing.png" alt="Landing page project preview" />
+              </div>
+              <div class="project-card-body">
+                <h4>Landing Page</h4>
+                <p>A minimal marketing page focused on conversion, hierarchy, and a clean user-first layout.</p>
+                <div class="project-card-tags">
+                  <span>Landing</span>
+                  <span>UI</span>
+                  <span>Web</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <p class="section-kicker">03 — Capabilities</p>
+          <h2>Design thinking, development craft, and visual experimentation.</h2>
+        </div>
+
+        <div class="skill-cluster">
+          <div class="skill-group">
+            <h3>Development</h3>
+            <ul class="skill-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>C++</li>
+              <li>React</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>UI / UX</h3>
+            <ul class="skill-list">
+              <li>Interface Design</li>
+              <li>Responsive Design</li>
+              <li>Figma</li>
+              <li>Visual Composition</li>
+              <li>Creative Direction</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Creative tools</h3>
+            <ul class="skill-list">
+              <li>Digital Illustration</li>
+              <li>Character Design</li>
+              <li>Scenery Design</li>
+              <li>Word / Excel / PowerPoint</li>
+              <li>Git &amp; GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <p class="section-kicker">04 — Learning path</p>
+          <h2>Constantly learning through practice and real projects.</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <h3>Belajar Dasar Pemrograman JavaScript</h3>
+              <p>Dicoding — focused on JavaScript fundamentals, DOM logic, and interactive web behavior.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <h3>Belajar Dasar Pemrograman Web</h3>
+              <p>Dicoding — HTML, CSS, and modern layout fundamentals for building readable digital experiences.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <h3>Program Aplikasi Perkantoran</h3>
+              <p>Ibay Komputer — practical software skills for professional document work and daily productivity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="cta-band">
+          <h3>Let’s make something worth seeing.</h3>
+          <a class="btn btn-primary" href="contact.html">Get in touch</a>
+        </div>
+      </section>
     </main>
+
     <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-logo">DENI.</div>
-        <nav class="footer-links">
+      <div class="site-footer-inner">
+        <div class="footer-brand">Deni.</div>
+        <nav class="footer-links" aria-label="Footer navigation">
           <a href="index.html">About</a>
           <a href="skills.html">Skills</a>
           <a href="projects.html">Projects</a>
           <a href="contact.html">Contact</a>
-          <a href="certificate.html">Certificate</a>
+          <a href="certificate.html">Certificates</a>
         </nav>
-        <p class="footer-copy">© 2025 <span>Deni Anugrah</span> — Full Stack Developer &amp; Illustrator</p>
+        <p class="footer-copy">© <span data-current-year>2026</span> Deni Anugrah Hasibuan — Creative Developer</p>
       </div>
     </footer>
+
     <script src="js/portfolio.js"></script>
   </body>
 </html>

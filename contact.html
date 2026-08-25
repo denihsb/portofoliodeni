@@ -1,52 +1,114 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Deni</title>
+    <meta name="description" content="Get in touch with Deni Anugrah Hasibuan for design, creative development, and collaboration opportunities." />
+    <meta name="theme-color" content="#f3f1eb" />
+    <title>Contact | Deni Anugrah Hasibuan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
-  <body>
-    <header class="navbar-wrapper">
-      <div class="navbar-container">
-        <a href="index.html" class="navbar-logo">DENI.</a>
-        <button class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-        <nav class="nav-list">
-          <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <li><a href="certificate.html">Certificate</a></li>
-          </ul>
-        </nav>
+  <body data-page="contact" data-theme="light">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="index.html" class="logo">Deni.</a>
+
+        <div class="nav-wrap">
+          <nav class="nav-list" aria-label="Main navigation">
+            <ul>
+              <li><a class="nav-link" data-page="about" href="index.html">About</a></li>
+              <li><a class="nav-link" data-page="skills" href="skills.html">Skills</a></li>
+              <li><a class="nav-link" data-page="projects" href="projects.html">Projects</a></li>
+              <li><a class="nav-link" data-page="contact" href="contact.html">Contact</a></li>
+              <li><a class="nav-link" data-page="certificates" href="certificate.html">Certificates</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-wrap-right" style="display: flex; align-items: center; gap: 0.75rem;">
+          <button class="theme-toggle" type="button" aria-label="Switch theme">
+            <span class="icon">☾</span>
+          </button>
+          <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
-    <main>
-      <section class="contact">
-        <h2>Contact</h2>
-        <p class="contact-desc">Tertarik untuk bekerja sama, berkolaborasi, atau sekadar berdiskusi? Jangan ragu untuk menghubungi saya.</p>
-        <div class="contact-container">
-          <a href="mailto:denianugra8@gmail.com" class="contact-card"><h3>Email</h3><p>denianugra8@gmail.com</p></a>
-          <a href="https://www.linkedin.com/in/denii-anugrah-hsb-a0b232345" class="contact-card" target="_blank"><h3>LinkedIn</h3><p>linkedin.com/in/denii-anugrah-hsb</p></a>
-          <a href="https://github.com/denihsb" class="contact-card" target="_blank"><h3>GitHub</h3><p>github.com/denihsb</p></a>
-          <a href="https://www.instagram.com/jst_artt26?igsh=MWNlZm44ODRwYnEyaw==" class="contact-card" target="_blank"><h3>Instagram</h3><p>instagram.com/jst_artt26</p></a>
+
+    <main class="page-shell">
+      <section class="page-header reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s build something meaningful.</h1>
+        <p>If you have a project, opportunity, or just want to say hello, I’d be glad to connect.</p>
+      </section>
+
+      <section class="section reveal">
+        <div class="contact-grid">
+          <div class="page-panel contact-card-list">
+            <div class="contact-item">
+              <div class="contact-label"><i class="fas fa-envelope"></i></div>
+              <div class="contact-meta">
+                <strong>Email</strong>
+                <a href="mailto:denianugra8@gmail.com">denianugra8@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-meta">
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/denii-anugrah-hsb-a0b232345" target="_blank" rel="noreferrer">linkedin.com/in/denii-anugrah-hsb</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label"><i class="fab fa-github"></i></div>
+              <div class="contact-meta">
+                <strong>GitHub</strong>
+                <a href="https://github.com/denihsb" target="_blank" rel="noreferrer">github.com/denihsb</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label"><i class="fab fa-instagram"></i></div>
+              <div class="contact-meta">
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/jst_artt26?igsh=MWNlZm44ODRwYnEyaw==" target="_blank" rel="noreferrer">instagram.com/jst_artt26</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-panel">
+            <p class="eyebrow">Availability</p>
+            <h3 style="font-size: 2rem; line-height: 1; letter-spacing: -0.05em; margin-top: 0.7rem; margin-bottom: 1rem;">Open to collaborative work.</h3>
+            <p style="color: var(--color-muted);">I’m open to freelance projects, creative collaborations, and web experiences that need both strong usability and a distinct visual point of view.</p>
+            <div style="margin-top: 1.2rem;">
+              <a class="btn btn-primary" href="mailto:denianugra8@gmail.com">Email me</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-logo">DENI.</div>
-        <nav class="footer-links">
-          <a href="index.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a href="certificate.html">Certificate</a>
+      <div class="site-footer-inner">
+        <div class="footer-brand">Deni.</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="certificate.html">Certificates</a>
         </nav>
-        <p class="footer-copy">© 2025 <span>Deni Anugrah</span> — Full Stack Developer &amp; Illustrator</p>
+        <p class="footer-copy">© <span data-current-year>2026</span> Deni Anugrah Hasibuan — Creative Developer</p>
       </div>
     </footer>
+
     <script src="js/portfolio.js"></script>
   </body>
 </html>

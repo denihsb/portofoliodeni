@@ -1,66 +1,237 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | Deni</title>
+    <meta name="description" content="Selected projects by Deni Anugrah Hasibuan, covering creative web development, interfaces, and visual storytelling." />
+    <meta name="theme-color" content="#f3f1eb" />
+    <title>Projects | Deni Anugrah Hasibuan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
-  <body>
-    <header class="navbar-wrapper">
-      <div class="navbar-container">
-        <a href="index.html" class="navbar-logo">DENI.</a>
-        <button class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-        <nav class="nav-list">
-          <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="certificate.html">Certificate</a></li>
-          </ul>
-        </nav>
+  <body data-page="projects" data-theme="light">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="index.html" class="logo">Deni.</a>
+
+        <div class="nav-wrap">
+          <nav class="nav-list" aria-label="Main navigation">
+            <ul>
+              <li><a class="nav-link" data-page="about" href="index.html">About</a></li>
+              <li><a class="nav-link" data-page="skills" href="skills.html">Skills</a></li>
+              <li><a class="nav-link" data-page="projects" href="projects.html">Projects</a></li>
+              <li><a class="nav-link" data-page="contact" href="contact.html">Contact</a></li>
+              <li><a class="nav-link" data-page="certificates" href="certificate.html">Certificates</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-wrap-right" style="display: flex; align-items: center; gap: 0.75rem;">
+          <button class="theme-toggle" type="button" aria-label="Switch theme">
+            <span class="icon">☾</span>
+          </button>
+          <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
-    <main>
-      <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-category">
-          <h3>Web Development</h3>
-          <div class="projects-container">
-            <div class="project-card"><div class="img-wrapper"><img src="img/web.png" alt="Profile Website"></div><h4>Profile Website</h4><p>Website profile modern dengan desain indah, informatif dan responsive.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div><div class="project-links"><a href="https://denihsb.github.io/bandungprofile/" target="_blank">Live Demo</a><a href="https://github.com/denihsb/bandungprofile" target="_blank">GitHub</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/artlocal.png" alt="Art Local"></div><h4>Art Local</h4><p>Website untuk menampilkan karya seni lokal dengan desain modern.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div><div class="project-links"><a href="https://github.com/denihsb/proyekpemweb" target="_blank">Live Demo</a><a href="https://denihsb.github.io/proyekpemweb/" target="_blank">GitHub</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/porto.png" alt="Portofolio Website"></div><h4>Portofolio Website</h4><p>Website portofolio modern dengan desain clean dan responsive.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div><div class="project-links"><a href="https://denihsb.github.io/portofoliodeni/" target="_blank">Live Demo</a><a href="https://github.com/denihsb/portofoliodeni" target="_blank">GitHub</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/landing.png" alt="Landing Page"></div><h4>Landing Page</h4><p>Landing page minimalis dengan fokus pada user experience.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Minimalis</span></div><div class="project-links"><a href="https://denihsb.github.io/landingpagedicoding/" target="_blank">Live Demo</a><a href="https://github.com/denihsb/landingpagedicoding" target="_blank">GitHub</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/pesanromantis.png" alt="Pesan Romantis"></div><h4>Website Pesan Romantis</h4><p>Website pesan romantis interaktif dengan musik romantis dan desain yang unik.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://denihsb.github.io/gfterharu/" target="_blank">Live Demo</a><a href="https://github.com/denihsb/gfterharu" target="_blank">GitHub</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/interaktifgemes.png" alt="Mini Games Valentine"></div><h4>Website Mini Games Valentine</h4><p>Website mini games interaktif untuk hari valentine dengan desain unik.</p><div class="project-tags"><span>CSS</span><span>Interactive</span><span>JavaScript</span></div><div class="project-links"><a href="https://denihsb.github.io/gamelucugemes/" target="_blank">Live Demo</a><a href="https://github.com/denihsb/gamelucugemes" target="_blank">GitHub</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/hbd.png" alt="Ucapan Ulang Tahun"></div><h4>Website Ucapan Ulang Tahun</h4><p>Website ucapan ulang tahun interaktif dengan desain elegan dan musik latar yang spesial.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://denihsb.github.io/birthdaygift/" target="_blank">Live Demo</a><a href="https://github.com/denihsb/birthdaygift" target="_blank">GitHub</a></div></div>
-          </div>
-        </div>
-        <div class="project-category">
-          <h4>Illustration</h4>
-          <div class="projects-container">
-            <div class="project-card"><div class="img-wrapper"><img src="img/digital.jpeg" alt="Character Design"></div><h4>Character Design</h4><p>Koleksi desain karakter dan latar belakang digital dengan gaya modern.</p><div class="project-tags"><span>Character</span><span>2D / 3D</span><span>Design</span></div><div class="project-links"><a href="#">View Artwork</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/scenery.jpeg" alt="Scenery Artwork"></div><h4>Scenery Artwork</h4><p>Koleksi desain latar belakang dan pemandangan dengan detail visual menarik.</p><div class="project-tags"><span>Scenery</span><span>Visual</span><span>Background</span></div><div class="project-links"><a href="https://www.instagram.com/jst_artt26?igsh=MWNlZm44ODRwYnEyaw==" target="_blank">View Artwork</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/miles.jpeg" alt="Digital Illustration"></div><h4>Digital Illustration</h4><p>Koleksi ilustrasi digital dengan gaya visual modern dan eksplorasi warna menarik.</p><div class="project-tags"><span>Digital</span><span>Visual</span><span>Modern</span></div><div class="project-links"><a href="https://www.instagram.com/jst_artt26?igsh=MWNlZm44ODRwYnEyaw==" target="_blank">View Artwork</a></div></div>
-            <div class="project-card"><div class="img-wrapper"><img src="img/tradisional.jpeg" alt="Traditional Illustration"></div><h4>Traditional Illustration</h4><p>Koleksi ilustrasi tradisional dengan teknik dan media yang beragam.</p><div class="project-tags"><span>Traditional</span><span>Illustration</span><span>Media</span></div><div class="project-links"><a href="https://www.instagram.com/jst_artt26?igsh=MWNlZm44ODRwYnEyaw==" target="_blank">View Artwork</a></div></div>
+
+    <main class="page-shell">
+      <section class="page-header reveal">
+        <p class="eyebrow">Selected work</p>
+        <h1>Projects.</h1>
+        <p>Creative web work, interfaces, and visual experiments built with a balance of function, clarity, and personality.</p>
+      </section>
+
+      <section class="section reveal">
+        <div class="work-grid">
+          <article class="project-feature">
+            <div class="project-visual">
+              <img src="img/artlocal.png" alt="Artlocal project showcase" />
+            </div>
+            <div class="project-content">
+              <div class="project-number">Project 01</div>
+              <h3>Artlocal</h3>
+              <div class="project-meta">
+                <span class="meta-tag">UI/UX</span>
+                <span class="meta-tag">Frontend</span>
+                <span class="meta-tag">Creative</span>
+              </div>
+              <p class="project-copy">A project focused on local art discovery and visual storytelling, presenting cultural work with a clean, modern editorial aesthetic.</p>
+              <div class="project-links-row">
+                <a class="inline-link" href="https://denihsb.github.io/proyekpemweb/" target="_blank" rel="noreferrer">Live demo</a>
+                <a class="inline-link" href="https://github.com/denihsb/proyekpemweb" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="project-list">
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/web.png" alt="Bandung profile website showcase" />
+              </div>
+              <div class="project-card-body">
+                <h4>Bandung City Profile</h4>
+                <p>A city profile website designed to feel informative, polished, and welcoming while staying easy to scan on any device.</p>
+                <div class="project-card-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/porto.png" alt="Portfolio project showcase" />
+              </div>
+              <div class="project-card-body">
+                <h4>Portfolio</h4>
+                <p>Personal portfolio site designed around clarity, identity, and digital storytelling.</p>
+                <div class="project-card-tags">
+                  <span>Portfolio</span>
+                  <span>UX</span>
+                  <span>Visual</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/landing.png" alt="Landing page project showcase" />
+              </div>
+              <div class="project-card-body">
+                <h4>Landing Page</h4>
+                <p>A minimal conversion-focused page built around hierarchy, whitespace, and readability.</p>
+                <div class="project-card-tags">
+                  <span>Landing</span>
+                  <span>UI</span>
+                  <span>Web</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/pesanromantis.png" alt="Romantic message website showcase" />
+              </div>
+              <div class="project-card-body">
+                <h4>Pesan Romantis</h4>
+                <p>Interactive romantic message page with a warm and playful visual expression.</p>
+                <div class="project-card-tags">
+                  <span>JavaScript</span>
+                  <span>UI</span>
+                  <span>Story</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/interaktifgemes.png" alt="Valentine interactive game showcase" />
+              </div>
+              <div class="project-card-body">
+                <h4>Mini Game</h4>
+                <p>Mini interactive experience designed for a light, fun, and memorable user journey.</p>
+                <div class="project-card-tags">
+                  <span>Game</span>
+                  <span>UI</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-visual-small">
+                <img src="img/hbd.png" alt="Birthday greeting website showcase" />
+              </div>
+              <div class="project-card-body">
+                <h4>Birthday Greeting</h4>
+                <p>A celebratory web piece that merges emotional storytelling with visual design details.</p>
+                <div class="project-card-tags">
+                  <span>Creative</span>
+                  <span>Design</span>
+                  <span>Web</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <p class="section-kicker">Illustration</p>
+          <h2>Visual experiments and personal creative work.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-visual-small">
+              <img src="img/digital.jpeg" alt="Character design artwork" />
+            </div>
+            <div class="project-card-body">
+              <h4>Character Design</h4>
+              <p>Exploration in forms, colors, and personality through digital character composition.</p>
+              <div class="project-card-tags">
+                <span>Character</span>
+                <span>2D</span>
+                <span>Design</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual-small">
+              <img src="img/scenery.jpeg" alt="Scenery artwork" />
+            </div>
+            <div class="project-card-body">
+              <h4>Scenery Artwork</h4>
+              <p>Landscape-focused visual work with texture, depth, and mood-driven composition.</p>
+              <div class="project-card-tags">
+                <span>Scenery</span>
+                <span>Visual</span>
+                <span>Art</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual-small">
+              <img src="img/miles.jpeg" alt="Digital illustration" />
+            </div>
+            <div class="project-card-body">
+              <h4>Digital Illustration</h4>
+              <p>Color-driven explorations mixing modern visual language with expressive storytelling.</p>
+              <div class="project-card-tags">
+                <span>Digital</span>
+                <span>Color</span>
+                <span>Modern</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+
     <footer class="site-footer">
-      <div class="footer-inner">
-        <div class="footer-logo">DENI.</div>
-        <nav class="footer-links">
-          <a href="index.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a href="certificate.html">Certificate</a>
+      <div class="site-footer-inner">
+        <div class="footer-brand">Deni.</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="certificate.html">Certificates</a>
         </nav>
-        <p class="footer-copy">© 2025 <span>Deni Anugrah</span> — Full Stack Developer &amp; Illustrator</p>
+        <p class="footer-copy">© <span data-current-year>2026</span> Deni Anugrah Hasibuan — Creative Developer</p>
       </div>
     </footer>
+
     <script src="js/portfolio.js"></script>
   </body>
 </html>
